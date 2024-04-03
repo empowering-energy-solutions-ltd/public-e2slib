@@ -1,0 +1,41 @@
+site_name: E2Slib
+
+theme:
+  name: material
+  palette:
+    primary: cy
+    accent: purple
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python: 
+          paths: [e2slib]
+
+markdown_extensions:
+  - tables 
+
+
+nav:
+  - Home: index.md
+  - Code Reference: 
+    - Analysis:
+      - reference/analysis/comparison.md
+      - reference/analysis/economic_functions.md
+      - reference/analysis/location.md
+      - reference/analysis/scenario.md
+      - reference/analysis/simulation.md
+      - reference/analysis/site.md
+    - Misc:
+      - reference/common/common.md
+      - reference/site/schedule.md
+    - Structures:
+      - reference/structures/enums.md
+      - reference/structures/protocols.md
+    - Utility:
+      - reference/utillib/dummy_data.md
+      - reference/utillib/functions.md

@@ -1,0 +1,1 @@
+::: structures.site_schema
